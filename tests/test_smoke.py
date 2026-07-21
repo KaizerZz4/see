@@ -6,7 +6,7 @@ from app import add, describe
 class SmokeTests(unittest.TestCase):
     def test_add(self):
         # BREAK THIS LINE (== 5) on injection day to force a red CI check.
-        self.assertEqual(add(2, 2), 5)
+        self.assertEqual(add(2, 2), 4)
 
     def test_describe(self):
         self.assertEqual(describe(4), "even")
